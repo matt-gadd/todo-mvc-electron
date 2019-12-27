@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"jsx": "react",
+		"jsxFactory": "tsx",
+		"declaration": false,
+		"experimentalDecorators": true,
+		"module": "umd",
+		"moduleResolution": "node",
+		"strict": true,
+		"outDir": "_build/",
+		"removeComments": false,
+		"sourceMap": true,
+		"target": "es5",
+		"types": [ "intern" ],
+		"lib": [
+			"dom",
+			"es5",
+			"es2015.iterable",
+			"es2015.promise",
+			"es2015.symbol",
+			"es2015.symbol.wellknown"
+		]
+	},
+	"include": [
+		"./src/**/*.ts",
+		"./tests/**/*.ts",
+		"./src/**/*.tsx",
+		"./tests/**/*.tsx"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"build-app": {
+		"base": "./",
+		"externals": {
+			"outputPath": ".",
+			"dependencies": [
+				{
+					"from": "src/electron.js",
+					"to": "electron.js"
+				}
+			]
+		}
+	}
+}
