@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "TodoMVC using Dojo",
   "scripts": {
-    "build": "dojo build app -m dev",
-    "run": "npm run build && electron index.js",
-    "package": "npm run build && electron-packager . todo-mvc --out output/app --overwrite"
+    "dev": "dojo build app -m dev -t electron && electron ./output/dev/electron.js",
+    "start": "dojo build app -m dev -w -s -t electron",
+    "start:electron": "electron output/dev/electron.js",
+    "package": "dojo build app -t electron"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,7 @@
   },
   "devDependencies": {
     "@dojo/cli": "^6.0.0",
-    "@dojo/cli-build-app": "^6.0.0",
+    "@dojo/cli-build-app": "./dojo-cli-build-app-6.0.0.tgz",
     "@dojo/cli-test-intern": "^6.0.0",
     "@types/glob": "~5.0.0",
     "@types/node": "^6.0.46",
